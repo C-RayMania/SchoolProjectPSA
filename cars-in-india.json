@@ -2,7 +2,7 @@
     {
       "make": "Tata",
       "model": "Nexon",
-      "price": "8.10 Lakh",
+      "price": "8.10",
       "features": {
         "engine": "1199 to 1497 cc",
         "transmission": "Manual & Automatic"
@@ -11,7 +11,7 @@
     {
       "make": "Kia",
       "model": "Seltos",
-      "price": "10.90 Lakh",
+      "price": "10.90",
       "features": {
         "engine": "1482 to 1497 cc",
         "transmission": "Manual & Automatic"
@@ -20,7 +20,7 @@
     {
         "make": "Mahindra",
         "model": "Scorpio",
-        "price": "13.26 Lakh",
+        "price": "13.26",
         "features": {
           "engine": "1997 to 2184 cc",
           "transmission": "Manual & Automatic"
