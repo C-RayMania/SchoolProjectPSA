@@ -3,27 +3,21 @@
       "make": "Tata",
       "model": "Nexon",
       "price": "8.10",
-      "features": {
-        "engine": "1199",
-        "transmission": "Manual & Automatic"
-      }
+      "engine": "1199",
+      "transmission": "Manual & Automatic"
     },
     {
       "make": "Kia",
       "model": "Seltos",
       "price": "10.90",
-      "features": {
-        "engine": "1482",
-        "transmission": "Manual & Automatic"
-      }
+      "engine": "1482",
+      "transmission": "Manual & Automatic"
     },
     {
         "make": "Mahindra",
         "model": "Scorpio",
         "price": "13.26",
-        "features": {
-          "engine": "1997",
-          "transmission": "Manual & Automatic"
-        }
+        "engine": "1997",
+        "transmission": "Manual & Automatic"
     }
 ]
