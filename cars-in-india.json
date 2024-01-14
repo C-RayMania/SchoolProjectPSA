@@ -4,7 +4,7 @@
       "model": "Nexon",
       "price": "8.10",
       "features": {
-        "engine": "1199 to 1497 cc",
+        "engine": "1199",
         "transmission": "Manual & Automatic"
       }
     },
@@ -13,7 +13,7 @@
       "model": "Seltos",
       "price": "10.90",
       "features": {
-        "engine": "1482 to 1497 cc",
+        "engine": "1482",
         "transmission": "Manual & Automatic"
       }
     },
@@ -22,7 +22,7 @@
         "model": "Scorpio",
         "price": "13.26",
         "features": {
-          "engine": "1997 to 2184 cc",
+          "engine": "1997",
           "transmission": "Manual & Automatic"
         }
     }
