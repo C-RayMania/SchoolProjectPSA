@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pick My Ride - Compare Cars</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/comparison.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>Compare Cars</h1>
+
+    <form id="comparisonForm" name="comparisonForm" onsubmit="return validateForm()">
+        <label for="car1">Enter car model 1:</label>
+        <input type="text" id="car1" name="car1"><br>
+        <label for="car2">Enter car model 2:</label>
+        <input type="text" id="car2" name="car2"><br>
+        <button type="submit">Compare</button>
+    </form>
+
+    <table class="table-1">
+        <tr>
+            <th>Company</th>
+            <td id="company1"></td>
+            <td id="company2"></td>
+        </tr>
+        <tr>
+            <th>Model</th>
+            <td id="model1"></td>
+            <td id="model2"></td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td id="price1"></td>
+            <td id="price2"></td>
+        </tr>
+        <tr>
+            <th>Engine CC</th>
+            <td id="engine1"></td>
+            <td id="engine2"></td>
+        </tr>
+    </table>
+<p>All specifications are on base model only.</p>
+<br><br>
+<a href="/index.html" class="main-btn">Home</a>
+
+<footer>This website is an AI project made by Brahmvir Singh Seeray.</footer>
+
+    <script>
+        function validateForm() {
+            var car1 = document.forms["comparisonForm"]["car1"].value;
+            var car2 = document.forms["comparisonForm"]["car2"].value;
+
+            if (car1 === "" || car2 === "") {
+                alert("Both car names must be filled out.");
+                return false;
+            }
+
+            // Call the function to compare cars with the entered models
+            compareCars(car1, car2);
+
+            // Prevent the form from submitting (default behavior)
+            return false;
+        }
+
+        function compareCars(car1Model, car2Model) {
+            $.getJSON('https://raw.githubusercontent.com/C-RayMania/SchoolProjectPSA/main/cars-in-india.json', function(data) {
+                // Find car data for car1
+                var car1Data = findCarData(data, car1Model);
+                updateUI('company1', 'model1', 'price1', 'engine1', 'features1', car1Data);
+
+                // Find car data for car2
+                var car2Data = findCarData(data, car2Model);
+                updateUI('company2', 'model2', 'price2', 'engine2', 'features2', car2Data);
+
+                // Compare prices and engine cc, apply background colors
+                compareAndColor('price1', 'price2');
+                compareAndColor2('engine1', 'engine2');
+            });
+        }
+
+        function findCarData(data, carModel) {
+            return data.find(function(car) {
+                return car.model.toLowerCase() === carModel.toLowerCase();
+            }) || {};
+        }
+
+        function updateUI(companyId, modelId, priceId, engineId, featuresId, carData) {
+            document.getElementById(companyId).innerText = carData.make || '-';
+            document.getElementById(modelId).innerText = carData.model || '-';
+            document.getElementById(priceId).innerText = formatPrice(carData.price) || '-';
+            document.getElementById(engineId).innerText = formatEngine(carData.engine) || '-';
+            
+            // Call compareAndColor after updating UI
+            compareAndColor('price1', 'price2');
+            compareAndColor2('engine1', 'engine2');
+        }
+        
+        function formatPrice(price) {
+            return price ? `${price} Lakh` : '-';
+        }
+
+        function formatEngine(engine) {
+            return engine ? `${engine} cc` : '-';
+        }
+
+        function compareAndColor(element1Id, element2Id) {
+            var value1 = parseFloat(document.getElementById(element1Id).innerText);
+            var value2 = parseFloat(document.getElementById(element2Id).innerText);
+
+            if (!isNaN(value1) && !isNaN(value2)) {
+                if (value1 < value2) {
+                    document.getElementById(element1Id).style.backgroundColor = '#50e669';
+                    document.getElementById(element2Id).style.backgroundColor = '#ff5c5c';
+                } else if (value1 > value2) {
+                    document.getElementById(element1Id).style.backgroundColor = '#ff5c5c';
+                    document.getElementById(element2Id).style.backgroundColor = '#50e669';
+                }
+            }
+        }
+        function compareAndColor2(element1Id, element2Id) {
+            var value1 = parseFloat(document.getElementById(element1Id).innerText);
+            var value2 = parseFloat(document.getElementById(element2Id).innerText);
+
+            if (!isNaN(value1) && !isNaN(value2)) {
+                if (value1 > value2) {
+                    document.getElementById(element1Id).style.backgroundColor = '#50e669';
+                    document.getElementById(element2Id).style.backgroundColor = '#ff5c5c';
+                } else if (value1 < value2) {
+                    document.getElementById(element1Id).style.backgroundColor = '#ff5c5c';
+                    document.getElementById(element2Id).style.backgroundColor = '#50e669';
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "pickmyride-ai-project",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

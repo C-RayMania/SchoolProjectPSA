@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pick My Ride - Compare Cars</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/comparison.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>Compare Cars</h1>
+
+    <form id="comparisonForm" name="comparisonForm" onsubmit="return validateForm()">
+        <label for="car1">Enter car model 1:</label>
+        <input type="text" id="car1" name="car1"><br>
+        <label for="car2">Enter car model 2:</label>
+        <input type="text" id="car2" name="car2"><br>
+        <button type="submit">Compare</button>
+    </form>
+
+    <table class="table-1">
+        <tr>
+            <th>Company</th>
+            <td id="company1"></td>
+            <td id="company2"></td>
+        </tr>
+        <tr>
+            <th>Model</th>
+            <td id="model1"></td>
+            <td id="model2"></td>
+        </tr>
+        <tr>
+            <th>transmission</th>
+            <td id="price1"></td>
+            <td id="price2"></td>
+        </tr>
+        <tr>
+            <th>year</th>
+            <td id="features1"></td>
+            <td id="features2"></td>
+        </tr>
+    </table>
+
+    <script>
+        function validateForm() {
+            var car1 = document.forms["comparisonForm"]["car1"].value;
+            var car2 = document.forms["comparisonForm"]["car2"].value;
+
+            if (car1 === "" || car2 === "") {
+                alert("Both car names must be filled out.");
+                return false;
+            }
+
+            compareCars(car1, car2);
+            return false;
+        }
+
+        function compareCars(car1Model, car2Model) {
+            $.ajax({
+                method: 'GET',
+                url: 'https://api.api-ninjas.com/v1/cars?model=' + car1Model,
+                headers: { 'X-Api-Key': '+XoDHfi1PyAn/EY0yUzM0A==nLbSEbGwdRmCXM4Z' },
+                contentType: 'application/json',
+                success: function(result1) {
+                    updateUI('company1', 'model1', 'price1', 'features1', result1);
+
+                    $.ajax({
+                        method: 'GET',
+                        url: 'https://api.api-ninjas.com/v1/cars?model=' + car2Model,
+                        headers: { 'X-Api-Key': '+XoDHfi1PyAn/EY0yUzM0A==nLbSEbGwdRmCXM4Z' },
+                        contentType: 'application/json',
+                        success: function(result2) {
+                            updateUI('company2', 'model2', 'price2', 'features2', result2);
+                        },
+                        error: function ajaxError(jqXHR) {
+                            console.error('Error fetching car data for car2: ', jqXHR.responseText);
+                        }
+                    });
+                },
+                error: function ajaxError(jqXHR) {
+                    console.error('Error fetching car data for car1: ', jqXHR.responseText);
+                }
+            });
+        }
+
+        function updateUI(companyId, modelId, priceId, featuresId, carData) {
+            document.getElementById(companyId).innerText = carData[0]?.make || '-';
+            document.getElementById(modelId).innerText = carData[0]?.model || '-';
+            document.getElementById(priceId).innerText = carData[0]?.transmission || '-';
+            document.getElementById(featuresId).innerText = carData[0]?.year || '-';
+        }
+    </script>
+
+</body>
+</html>

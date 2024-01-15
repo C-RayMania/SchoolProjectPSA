@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    padding: 24px;
+    background-color: #800080;
+    color: #ffffff;
+}
+
+form {
+    padding: 12px 48px;
+    max-width: 550px;
+    margin: 0 auto;
+    flex: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    display: flex;
+}
+
+td, th {
+    border: 1px solid #808080;
+    text-align: right;
+    padding: 12px;
+}
+td {
+    text-align: center;
+}
+
+.table-1 {
+    margin: 24px auto;
+    padding: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+p {
+    text-align: center;
+    font-size: 10px;
+    margin: 4px auto;
+}
+@media screen and (max-width: 720px) {
+    form {
+        margin: 12px 12vw;
+    }
+}

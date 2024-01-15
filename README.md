@@ -1,2 +1,2 @@
 # SchoolProjectPSA
-This is an Android app which helps users to find a parking space near them.
+This is a website which helps users to decide what car to buy by giving them details about two cars and comparing them.
