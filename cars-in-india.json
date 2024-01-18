@@ -1,25 +1,23 @@
 [
-    {
-      "make": "Tata",
-      "model": "Nexon",
-      "price": "8.10",
-      "engine": "1199",
-      "transmission": "Manual & Automatic"
-    },
-    {
-      "make": "Kia",
-      "model": "Seltos",
-      "price": "10.90",
-      "engine": "1482",
-      "transmission": "Manual & Automatic"
-    },
-    {
-        "make": "Mahindra",
-        "model": "Scorpio",
-        "price": "13.26",
-        "engine": "1997",
-        "transmission": "Manual & Automatic"
-    },
+  {
+    "make": "Tata",
+    "model": "Nexon",
+    "price": 5.23,
+    "engine": 1942
+  },
+  {
+    "make": "Kia",
+    "model": "Seltos",
+    "price": 12.00,
+    "engine": 2365
+  },
+  {
+    "make": "Mahindra",
+    "model": "Scorpio",
+    "price": 13.26,
+    "engine": 1997,
+    "transmission": "Manual & Automatic"
+  },
   {
     "make": "Maruti Suzuki",
     "model": "Fronx",
@@ -35,13 +33,13 @@
   {
     "make": "Mercedes-Benz",
     "model": "G-Class",
-    "price": 2.55,
+    "price": 255,
     "engine": 2925
   },
   {
     "make": "Mercedes-Benz",
     "model": "GLS",
-    "price": 1.32,
+    "price": 132,
     "engine": 2989
   },
   {
@@ -58,14 +56,14 @@
   },
   {
     "make": "BMW",
-    "model": "M4 competition",
-    "price": 1.48,
+    "model": "M4 Competition",
+    "price": 148,
     "engine": 2993
   },
   {
     "make": "BMW",
     "model": "7 Series",
-    "price": 1.82,
+    "price": 182,
     "engine": 2993
   },
   {
@@ -81,13 +79,13 @@
     "engine": 1998
   },
   {
-    "make": "AUDI",
+    "make": "Audi",
     "model": "RS5",
-    "price": 1.13,
+    "price": 113,
     "engine": 2894
   },
   {
-    "make": "AUDI",
+    "make": "Audi",
     "model": "A4",
     "price": 45.34,
     "engine": 1984
@@ -95,25 +93,25 @@
   {
     "make": "Porsche",
     "model": "911",
-    "price": 1.86,
+    "price": 105.6,
     "engine": 2981
   },
   {
     "make": "Porsche",
     "model": "Cayenne",
-    "price": 1.36,
+    "price": 136,
     "engine": 2995
   },
   {
     "make": "Rolls-Royce",
     "model": "Phantom",
-    "price": 9.50,
+    "price": 950,
     "engine": 6749
   },
   {
     "make": "Rolls-Royce",
     "model": "Cullinan",
-    "price": 6.95,
+    "price": 695,
     "engine": 6749
   },
   {
@@ -149,13 +147,13 @@
   {
     "make": "McLaren",
     "model": "720S",
-    "price": 4.65,
+    "price": 465,
     "engine": 3994
   },
   {
     "make": "Maserati",
     "model": "MC20",
-    "price": 3.65,
+    "price": 365,
     "engine": 3000
   },
   {
@@ -167,7 +165,307 @@
   {
     "make": "Lamborghini",
     "model": "Huracan Evo Spyder",
-    "price": 3.40,
+    "price": 340,
     "engine": 5204
+  },
+  {
+    "make": "BMW",
+    "model": "X7",
+    "price": 127,
+    "engine": 2998
+  },
+  {
+    "make": "BMW",
+    "model": "XM",
+    "price": 260,
+    "engine": 4395
+  },
+  {
+    "make": "Mercedes-Benz",
+    "model": "S-Class",
+    "price": 171,
+    "engine": 2999
+  },
+  {
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "price": 57.00,
+    "engine": 1993
+  },
+  {
+    "make": "Hyundai",
+    "model": "Verna",
+    "price": 11.00,
+    "engine": 1497
+  },
+  {
+    "make": "Audi",
+    "model": "Q4",
+    "price": 66.00,
+    "engine": 1984
+  },
+  {
+    "make": "Audi",
+    "model": "R8",
+    "price": 272,
+    "engine": 5204
+  },
+  {
+    "make": "Audi",
+    "model": "Q3",
+    "price": 44.00,
+    "engine": 1984
+  },
+  {
+    "make": "Land Rover",
+    "model": "Range Rover",
+    "price": 239,
+    "engine": 4395
+  },
+  {
+    "make": "Land Rover",
+    "model": "Discovery",
+    "price": 130,
+    "engine": 2998
+  },
+  {
+    "make": "Toyota",
+    "model": "Fortuner",
+    "price": 34.00,
+    "engine": 2755
+  },
+  {
+    "make": "Toyota",
+    "model": "Legender",
+    "price": 43.66,
+    "engine": 2755
+  },
+  {
+    "make": "Porsche",
+    "model": "718",
+    "price": 148,
+    "engine": 3997
+  },
+  {
+    "make": "MG",
+    "model": "Hector",
+    "price": 15.00,
+    "engine": 1956
+  },
+  {
+    "make": "Rolls-Royce",
+    "model": "Ghost",
+    "price": 695,
+    "engine": 6750
+  },
+  {
+    "make": "Jaguar",
+    "model": "F-Pace",
+    "price": 78.90,
+    "engine": 1997
+  },
+  {
+    "make": "Jeep",
+    "model": "Campus",
+    "price": 20.49,
+    "engine": 1956
+  },
+  {
+    "make": "Bentley",
+    "model": "Flying Spur",
+    "price": 525,
+    "engine": 5950
+  },
+  {
+    "make": "Mahindra",
+    "model": "Thar",
+    "price": 10.98,
+    "engine": 2184
+  },
+  {
+    "make": "Volvo",
+    "model": "XC90",
+    "price": 101,
+    "engine": 1969
+  },
+  {
+    "make": "Tata",
+    "model": "Tigor",
+    "price": 6.30,
+    "engine": 1199
+  },
+  {
+    "make": "McLaren",
+    "model": "GT",
+    "price": 450,
+    "engine": 3994
+  },
+  {
+    "make": "Mahindra",
+    "model": "XUV700",
+    "price": 14.03,
+    "engine": 2198
+  },
+  {
+    "make": "Lexus",
+    "model": "ES",
+    "price": 63.10,
+    "engine": 2487
+  },
+  {
+    "make": "Lamborghini",
+    "model": "Urus",
+    "price": 418,
+    "engine": 3999
+  },
+  {
+    "make": "Porsche",
+    "model": "911",
+    "price": 105.6,
+    "engine": 2981
+  },
+  {
+    "make": "Maruti Suzuki",
+    "model": "Grand Vitara",
+    "price": 13.45,
+    "engine": 1245
+  },
+  {
+    "make": "Mercedes-Benz",
+    "model": "E-Class",
+    "price": 205.5,
+    "engine": 2837
+  },
+  {
+    "make": "Bentley",
+    "model": "Flying Spur",
+    "price": 233.2,
+    "engine": 2381
+  },
+  {
+    "make": "Honda",
+    "model": "Elevate",
+    "price": 10.23,
+    "engine": 1284
+  },
+  {
+    "make": "Honda",
+    "model": "Amaze",
+    "price": 11.00,
+    "engine": 2998
+  },
+  {
+    "make": "BMW",
+    "model": "X7",
+    "price": 300,
+    "engine": 2993
+  },
+  {
+    "make": "BMW",
+    "model": "i4",
+    "price": 404,
+    "engine": 2892
+  },
+  {
+    "make": "Land Rover",
+    "model": "Velar",
+    "price": 91.44,
+    "engine": 1268
+  },
+  {
+    "make": "Maruti",
+    "model": "Omni",
+    "price": 2.00,
+    "engine": 998
+  },
+  {
+    "make": "Jeep",
+    "model": "Compass",
+    "price": 12.00,
+    "engine": 2894
+  },
+  {
+    "make": "Cadillac",
+    "model": "XT4",
+    "price": 24.35,
+    "engine": 2984
+  },
+  {
+    "make": "Toyota",
+    "model": "Land Cruiser",
+    "price": 186,
+    "engine": 2982
+  },
+  {
+    "make": "Mazda",
+    "model": "CX5",
+    "price": 12.24,
+    "engine": 1995
+  },
+  {
+    "make": "Lexus",
+    "model": "RX",
+    "price": 12.50,
+    "engine": 3749
+  },
+  {
+    "make": "Kia",
+    "model": "Seltos",
+    "price": 12.00,
+    "engine": 2365
+  },
+  {
+    "make": "GMC",
+    "model": "Yukon",
+    "price": 12.55,
+    "engine": 3899
+  },
+  {
+    "make": "Mini",
+    "model": "Cooper",
+    "price": 117.5,
+    "engine": 1399
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Polo",
+    "price": 10.00,
+    "engine": 798
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Tiguan",
+    "price": 11.25,
+    "engine": 1497
+  },
+  {
+    "make": "Maybach",
+    "model": "S 680",
+    "price": 340,
+    "engine": 3994
+  },
+  {
+    "make": "Koenigsegg",
+    "model": "Gemera",
+    "price": 1576,
+    "engine": 5794
+  },
+  {
+    "make": "Nissan",
+    "model": "Magnite",
+    "price": 7.22,
+    "engine": 1045
+  },
+  {
+    "make": "Tata",
+    "model": "Nexon",
+    "price": 5.23,
+    "engine": 1942
+  },
+  {
+    "make": "Lamborghini",
+    "model": "Revuelto",
+    "price": 523,
+    "engine": 6105
   }
 ]
