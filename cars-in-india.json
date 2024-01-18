@@ -19,5 +19,155 @@
         "price": "13.26",
         "engine": "1997",
         "transmission": "Manual & Automatic"
-    }
+    },
+  {
+    "make": "Maruti Suzuki",
+    "model": "Fronx",
+    "price": 7.47,
+    "engine": 1197
+  },
+  {
+    "make": "Maruti Suzuki",
+    "model": "Brezza",
+    "price": 8.29,
+    "engine": 1462
+  },
+  {
+    "make": "Mercedes-Benz",
+    "model": "G-Class",
+    "price": 2.55,
+    "engine": 2925
+  },
+  {
+    "make": "Mercedes-Benz",
+    "model": "GLS",
+    "price": 1.32,
+    "engine": 2989
+  },
+  {
+    "make": "Hyundai",
+    "model": "Creta",
+    "price": 11.00,
+    "engine": 1482
+  },
+  {
+    "make": "Hyundai",
+    "model": "Venue",
+    "price": 7.94,
+    "engine": 998
+  },
+  {
+    "make": "BMW",
+    "model": "M4 competition",
+    "price": 1.48,
+    "engine": 2993
+  },
+  {
+    "make": "BMW",
+    "model": "7 Series",
+    "price": 1.82,
+    "engine": 2993
+  },
+  {
+    "make": "Land Rover",
+    "model": "Defender",
+    "price": 93.55,
+    "engine": 1997
+  },
+  {
+    "make": "Land Rover",
+    "model": "Range Rover Velar",
+    "price": 94.30,
+    "engine": 1998
+  },
+  {
+    "make": "AUDI",
+    "model": "RS5",
+    "price": 1.13,
+    "engine": 2894
+  },
+  {
+    "make": "AUDI",
+    "model": "A4",
+    "price": 45.34,
+    "engine": 1984
+  },
+  {
+    "make": "Porsche",
+    "model": "911",
+    "price": 1.86,
+    "engine": 2981
+  },
+  {
+    "make": "Porsche",
+    "model": "Cayenne",
+    "price": 1.36,
+    "engine": 2995
+  },
+  {
+    "make": "Rolls-Royce",
+    "model": "Phantom",
+    "price": 9.50,
+    "engine": 6749
+  },
+  {
+    "make": "Rolls-Royce",
+    "model": "Cullinan",
+    "price": 6.95,
+    "engine": 6749
+  },
+  {
+    "make": "Renault",
+    "model": "Kwid",
+    "price": 4.70,
+    "engine": 999
+  },
+  {
+    "make": "Renault",
+    "model": "Kiger",
+    "price": 6.00,
+    "engine": 999
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Virtus",
+    "price": 11.56,
+    "engine": 1498
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Taigun",
+    "price": 11.70,
+    "engine": 1498
+  },
+  {
+    "make": "McLaren",
+    "model": "750S",
+    "price": 5.91,
+    "engine": 3994
+  },
+  {
+    "make": "McLaren",
+    "model": "720S",
+    "price": 4.65,
+    "engine": 3994
+  },
+  {
+    "make": "Maserati",
+    "model": "MC20",
+    "price": 3.65,
+    "engine": 3000
+  },
+  {
+    "make": "Bugatti",
+    "model": "Veyron",
+    "price": 11.39,
+    "engine": 7993
+  },
+  {
+    "make": "Lamborghini",
+    "model": "Huracan Evo Spyder",
+    "price": 3.40,
+    "engine": 5204
+  }
 ]
