@@ -18,6 +18,20 @@
     "engine": 1997,
     "transmission": "Manual & Automatic"
   },
+{
+    "make": "Kia",
+    "model": "Sonet",
+    "price": 7.99,
+    "engine": 998,
+    "transmission": "Manual & Automatic"
+  },
+{
+    "make": "Maruti Suzuki",
+    "model": "Swift",
+    "price": 5.99,
+    "engine": 1197,
+    "transmission": "Manual & Automatic"
+  },
   {
     "make": "Maruti Suzuki",
     "model": "Fronx",
